@@ -14,7 +14,7 @@ This data is licensed by Microsoft under the [Open Data Commons Open Database Li
 
 ## FAQ
 ### What does the data include?
-88,653,552 building footprint polygon geometries located in Malaysia, Indonesia, and the Philippines in line-delimited GeoJSON format. You may download the data in GeoJSON format here:
+776,900,013 building footprint polygon geometries located around the world in line-delimited GeoJSON format.
 
 | Location | Count | Link | Size (Compressed) |
 | :---: | :---: | :---: |:---: |
@@ -239,7 +239,7 @@ The building extraction is done in two stages:
 ![polygonization diagram](images/polygonization.jpg)
 
 ### Were there any modeling improvements used for this release? 
-We did not apply any modeling improvements for this release. 
+We did not apply any modeling improvements for this release. Instead, we focused on scaling our approach to increase coverage. 
 
 ### Evaluation set metrics
 The evaluation metrics are computed on a set of building polygon labels for each region. Note, we only have verification results for 
@@ -293,7 +293,7 @@ False positives are estimated per country from randomly sampled building polygon
 
 
 ### What is the vintage of this data?
-Vintage of extracted building footprints depends on vintage of the underlying imagery. Underlying imagery is from Maxar between 2016 and 2020.
+Vintage of extracted building footprints depends on vintage of the underlying imagery. Underlying imagery is from Maxar between 2014 and 2021.
 
 ### How good is the data?
 Our metrics show that in the vast majority of cases the quality is at least as good as hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it provides good recall in rural areas.
