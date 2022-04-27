@@ -1,6 +1,6 @@
 ## Introduction
 
-Bing Maps is releasing open building footprints around the world. We have detected **777M** buildings from 2014-2021 Maxar imagery. The data is freely available for download and use under ODBL. This dataset compliments our [other releases](). 
+Bing Maps is releasing open building footprints around the world. We have detected **777M** buildings from 2014-2021 Maxar imagery. The data is freely available for download and use under ODBL. This dataset compliments our [other releases](#will-there-be-more-data-coming-for-other-geographies). 
 
 ![sample footprints](images/footprints-sample.png)
 
@@ -216,7 +216,7 @@ This data is licensed by Microsoft under the [Open Data Commons Open Database Li
 
 ### What is the GeoJSON format?
 GeoJSON is a format for encoding a variety of geographic data structures. 
-For intensive documentation and tutorials, refer to [GeoJson blog](http://geojson.org/).
+For intensive documentation and tutorials, refer to this [blog](http://geojson.org/).
 
 ### Why is the data being released?
 Microsoft has a continued interest in supporting a thriving OpenStreetMap ecosystem.
@@ -239,7 +239,7 @@ The building extraction is done in two stages:
 ![polygonization diagram](images/polygonization.jpg)
 
 ### Were there any modeling improvements used for this release? 
-We did not apply any modeling improvements for this release. Instead, we focused on scaling our approach to increase coverage. 
+We did not apply any modeling improvements for this release. Instead, we focused on scaling our approach to increase coverage, and trained models regionally.  
 
 ### Evaluation set metrics
 The evaluation metrics are computed on a set of building polygon labels for each region. Note, we only have verification results for 
