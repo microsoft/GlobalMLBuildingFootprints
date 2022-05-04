@@ -1,6 +1,6 @@
 ## Introduction
 
-Bing Maps is releasing open building footprints around the world. We have detected **777M** buildings from 2014-2021 Maxar imagery. The data is freely available for download and use under ODBL. This dataset complements our [other releases](#will-there-be-more-data-coming-for-other-geographies). 
+Bing Maps is releasing open building footprints around the world. We have detected **777M** buildings from 2014-2021 Maxar imagery. The data is freely available for download and use under ODbL. This dataset complements our [other releases](#will-there-be-more-data-coming-for-other-geographies). 
 
 ![sample footprints](images/footprints-sample.png)
 
@@ -246,7 +246,7 @@ Mexico buildings since we did not train a model for the country.
 Building match metrics on the evaluation set:
 
 | Region          | Precision   | Recall   |
-|:----------------|:------------|:---------|
+|:----------------:|:------------:|:---------:|
 | Africa          | 94.4%       | 70.9%    |
 | Caribbean      | 92.2%       | 76.8%    |
 | Central Asia    | 97.17%      | 79.47%   |
@@ -263,7 +263,7 @@ We track the following metrics to measure the quality of matched building polygo
 2. Dominant angle rotation error – This measures the polygon rotation deviation
 
 | Region          | IoU    |   Rotation error [deg] |
-|:----------------|:-------|-----------------------:|
+|:----------------:|:-------:|:-----------------------:|
 | Africa          | 64.5%  |                   5.67 |
 | Caribbean      | 64.0%  |                   6.64 |
 | Central Asia    | 68.2%  |                   6.91 |
