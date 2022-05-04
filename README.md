@@ -1,6 +1,6 @@
 ## Introduction
 
-Bing Maps is releasing open building footprints around the world. We have detected **777M** buildings from 2014-2021 Maxar imagery. The data is freely available for download and use under ODbL. This dataset complements our [other releases](#will-there-be-more-data-coming-for-other-geographies). 
+Bing Maps is releasing open building footprints around the world. We have detected **777M** buildings from Bing Maps imagery between 2014 and 2021 including Maxar imagery. The data is freely available for download and use under ODbL. This dataset complements our [other releases](#will-there-be-more-data-coming-for-other-geographies). 
 
 ![sample footprints](images/footprints-sample.png)
 
@@ -291,7 +291,7 @@ False positives are estimated per country from randomly sampled building polygon
 
 
 ### What is the vintage of this data?
-Vintage of extracted building footprints depends on the vintage of the underlying imagery. The underlying imagery is from Maxar between 2014 and 2021.
+Vintage of extracted building footprints depends on the vintage of the underlying imagery. The underlying imagery is from Bing Maps including Maxar between 2014 and 2021.
 
 ### How good is the data?
 Our metrics show that in the vast majority of cases the quality is at least as good as hand digitized buildings in OpenStreetMap. It is not perfect, particularly in dense urban areas but it provides good recall in rural areas.
