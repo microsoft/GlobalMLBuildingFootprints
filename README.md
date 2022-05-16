@@ -287,7 +287,7 @@ False positives are estimated per country from randomly sampled building polygon
 | Mexico | 2,000 | 0.1% |
 | Middle East | 7,000 | 1.8% |
 | South America | 5,000 | 1.7% |
-| South Asia | 7,000 | 1.4 |
+| South Asia | 7,000 | 1.4% |
 
 
 ### What is the vintage of this data?
