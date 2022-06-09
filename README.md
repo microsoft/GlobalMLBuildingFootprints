@@ -309,6 +309,14 @@ Maybe. This is a work in progress. Also, check out our other building releases!
 * [Kenya and Nigeria](https://github.com/microsoft/KenyaNigeriaBuildingFootprints)
 * [Indonesia, Malaysia, and the Philippines](https://github.com/microsoft/IdMyPhBuildingFootprints)
 
+### Why are some locations missing?
+We excluded imagery from processing if tiles were dated before 2014 or there was a low-probability of detection. Detection probability is loosely defined here as proximity to roads and population centers. This filtering and tile exclusion results in squares of missing data. 
+
+### How can I read large files?
+Some files are very large but they are stored in line-delimited format so one could use parallel processing tools (e.g., [Spark](https://spark.apache.org/), [Dask](https://docs.dask.org/en/stable/dataframe.html)) or create a memory 
+efficient script to segment into smaller pieces. See `scripts/read-large-files.py` for a Python example. 
+
+
 <br>
 
 ## Contributing
