@@ -12,6 +12,9 @@ Bing Maps is releasing open building footprints around the world. We have detect
 ## License
 This data is licensed by Microsoft under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).
 
+## Updates
+* 2022-07-05 - The complete building footprints dataset is available on [Microsoft's Planetary Computer](https://planetarycomputer.microsoft.com/dataset/ms-buildings)
+
 ## FAQ
 ### What does the data include?
 776,712,641 building footprint polygon geometries located around the world in line delimited GeoJSON format.
