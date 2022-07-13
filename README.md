@@ -1,6 +1,6 @@
 ## Introduction
 
-Bing Maps is releasing open building footprints around the world. We have detected **777M** buildings from Bing Maps imagery between 2014 and 2021 including Maxar and Airbus imagery. The data is freely available for download and use under ODbL. This dataset complements our [other releases](#will-there-be-more-data-coming-for-other-geographies). 
+Bing Maps is releasing open building footprints around the world. We have detected **856M** buildings from Bing Maps imagery between 2014 and 2021 including Maxar and Airbus imagery. The data is freely available for download and use under ODbL. This dataset complements our [other releases](#will-there-be-more-data-coming-for-other-geographies). 
 
 ![sample footprints](images/footprints-sample.png)
 
@@ -14,7 +14,7 @@ You can download the layer above as GeoJSON [here](https://minedbuildings.blob.c
 This data is licensed by Microsoft under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).
 
 ## Updates
-* 2022-07-08 - Added **78M** buildings in Western EU Countries from Maxar and Vexcel imagery between 2014 and 2021 bringing the total structure count to **856M**. Added link to download buildings coverage. 
+* 2022-07-08 - Added **78M** buildings in Western EU Countries from Maxar imagery between 2014 and 2021 bringing the total structure count to **856M**. Added link to download buildings coverage. 
 * 2022-07-05 - The complete building footprints dataset is available on [Microsoft's Planetary Computer](https://planetarycomputer.microsoft.com/dataset/ms-buildings)
 
 ## FAQ
