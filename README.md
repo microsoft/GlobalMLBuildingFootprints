@@ -2,6 +2,14 @@
 
 Bing Maps is releasing open building footprints around the world. We have detected **982M** buildings from Bing Maps imagery between 2014 and 2022 including Maxar and Airbus imagery. The data is freely available for download and use under ODbL. This dataset complements our [other releases](#will-there-be-more-data-coming-for-other-geographies). 
 
+## Updates
+* 2022-10-12 - Added **147M** new buildings for North America based on Vexcel and Maxar imagery between 2017 and 2022. This data is a refresh of [US](https://github.com/microsoft/USBuildingFootprints). Updated data format from country-partitioned zip
+ files to country-[l9 quad key](https://learn.microsoft.com/en-us/bingmaps/articles/bing-maps-tile-system#tile-coordinates-and-quadkeys) gzipped partitioned files. Each file extension is .csv.gz but the contents are geojsonl. False positive rate for this dataset is ~1% based on a 4k structure sample. Link table was moved
+ to a [dataset-links.csv](dataset-links.csv)
+* 2022-07-08 - Added **78M** buildings in Western EU Countries from Maxar imagery between 2014 and 2021 bringing the total structure count to **856M**. Added link to download buildings coverage. 
+* 2022-07-05 - The complete building footprints dataset is available on [Microsoft's Planetary Computer](https://planetarycomputer.microsoft.com/dataset/ms-buildings)
+
+
 ![sample footprints](images/footprints-sample.png)
 
 ### Regions included 
@@ -13,12 +21,6 @@ You can download the layer above as GeoJSON [here](https://minedbuildings.blob.c
 ## License
 This data is licensed by Microsoft under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).
 
-## Updates
-* 2022-10-12 - Added **147M** buildings for North America based on Vexcel and Maxar imagery between 2017 and 2022. Updated data format from country-partitioned zip
- files to country-[l9 quad key](https://learn.microsoft.com/en-us/bingmaps/articles/bing-maps-tile-system#tile-coordinates-and-quadkeys) gzipped partitioned files. Each file extension is .csv.gz but the contents are geojsonl. False positive rate for this dataset is ~1% based on a 4k structure sample. Link table was moved
- to a [dataset-links.csv](dataset-links.csv)
-* 2022-07-08 - Added **78M** buildings in Western EU Countries from Maxar imagery between 2014 and 2021 bringing the total structure count to **856M**. Added link to download buildings coverage. 
-* 2022-07-05 - The complete building footprints dataset is available on [Microsoft's Planetary Computer](https://planetarycomputer.microsoft.com/dataset/ms-buildings)
 
 ## FAQ
 ### What does the data include?
