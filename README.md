@@ -16,7 +16,7 @@ Bing Maps is releasing open building footprints around the world. We have detect
 
 ![building regions](images/country-overview.png)
 
-You can download the layer above as GeoJSON [here](https://minedbuildings.blob.core.windows.net/global-buildings/2022-07-11/buildings-coverage.zip).
+You can download the layer above as GeoJSON [here](https://minedbuildings.blob.core.windows.net/global-buildings/2022-10-22/buildings-coverage.zip).
 
 ## License
 This data is licensed by Microsoft under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).
