@@ -1,11 +1,13 @@
 ## Introduction
 
-Bing Maps is releasing open building footprints around the world. We have detected **982M** buildings from Bing Maps imagery between 2014 and 2022 including Maxar and Airbus imagery. The data is freely available for download and use under ODbL. This dataset complements our [other releases](#will-there-be-more-data-coming-for-other-geographies). 
+Bing Maps is releasing open building footprints around the world. We have detected **999M** buildings from Bing Maps imagery between 2014 and 2022 including Maxar, Airbus, and IGN France imagery. The data is freely available for download and use under ODbL. This dataset complements our [other releases](#will-there-be-more-data-coming-for-other-geographies). 
 
 ## Updates
+* 2022-11-16 - Added **40M** new and updated buildings across 46 geographies derived from Bing imagery including Maxar, IGN-France, and AirBus between 2015 and 2022. The largest updates are for Pakistan (16M), Turkey (13M), Afghanistan (3M), and Saudi Arabia (2.5M). Added [make-gis-friendly.py](scripts/make-gis-friendly.py) demonstrating how to convert files
+into a GIS tool (e.g., QGIS, ArcGIS) friendly format. 
 * 2022-10-12 - Added **147M** new buildings for North America based on Vexcel and Maxar imagery between 2017 and 2022. This data is a refresh of [US](https://github.com/microsoft/USBuildingFootprints). Updated data format from country-partitioned zip
  files to country-[l9 quad key](https://learn.microsoft.com/en-us/bingmaps/articles/bing-maps-tile-system#tile-coordinates-and-quadkeys) gzipped partitioned files. Each file extension is .csv.gz but the contents are geojsonl. False positive rate for this dataset is ~1% based on a 4k structure sample. Link table was moved
- to a [dataset-links.csv](dataset-links.csv)
+ to a [dataset-links.csv](https://minedbuildings.blob.core.windows.net/global-buildings/dataset-links.csv)
 * 2022-07-08 - Added **78M** buildings in Western EU Countries from Maxar imagery between 2014 and 2021 bringing the total structure count to **856M**. Added link to download buildings coverage. 
 * 2022-07-05 - The complete building footprints dataset is available on [Microsoft's Planetary Computer](https://planetarycomputer.microsoft.com/dataset/ms-buildings)
 
@@ -16,7 +18,7 @@ Bing Maps is releasing open building footprints around the world. We have detect
 
 ![building regions](images/country-overview.png)
 
-You can download the layer above as GeoJSON [here](https://minedbuildings.blob.core.windows.net/global-buildings/2022-10-22/buildings-coverage.zip).
+You can download the layer above as GeoJSON [here](https://minedbuildings.blob.core.windows.net/global-buildings/buildings-coverage.geojson).
 
 ## License
 This data is licensed by Microsoft under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/).
@@ -24,9 +26,9 @@ This data is licensed by Microsoft under the [Open Data Commons Open Database Li
 
 ## FAQ
 ### What does the data include?
-982M building footprint polygon geometries located around the world in line delimited GeoJSON format. 
+999M building footprint polygon geometries located around the world in line delimited GeoJSON format. Due to the way we process the data, file extensions are `.csv.gz` see [make-gis-friendly.py](scripts/make-gis-friendly.py) for an example of how to decompress and change file extension.
 
-As of October 2022, we moved the location table to [dataset-links.csv](dataset-links.csv) since it's over 19k records with country-quadkey partitioning.
+As of October 2022, we moved the location table to [dataset-links.csv](https://minedbuildings.blob.core.windows.net/global-buildings/dataset-links.csv) since it's over 19k records with country-quadkey partitioning.
 
 ### What is the GeoJSON format?
 GeoJSON is a format for encoding a variety of geographic data structures. 
