@@ -22,4 +22,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main()Turkey,120322312,https://minedbuildings.blob.core.windows.net/global-buildings/2022-11-15/global-buildings.geojsonl/RegionName%3DTurkey/quadkey%3D120322312/part-00120-2cb4a5ad-6652-48b0-a336-f09518f4c9e5.c000.csv.gz,70.4KB
+        
