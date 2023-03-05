@@ -17,7 +17,7 @@ def main():
     for _, row in greece_links.iterrows():
         df = pd.read_json(row.Url, lines=True)
         df['geometry'] = df['geometry'].apply(shape)
-        gdf = gpd.GeoDataFrame(df, crs=4326)
+        gdf = gpd.GeoDataFrame(df, crs='EPSG:4326')
         gdf.to_file(f"{row.QuadKey}.geojson", driver="GeoJSON")
 
 
