@@ -3,6 +3,7 @@
 Bing Maps is releasing open building footprints around the world. We have detected **999M** buildings from Bing Maps imagery between 2014 and 2022 including Maxar, Airbus, and IGN France imagery. The data is freely available for download and use under ODbL. This dataset complements our [other releases](#will-there-be-more-data-coming-for-other-geographies). 
 
 ## Updates
+* 2023-03-13 - Added **41MM** new buildings in Japan derived from Maxar Imagery (FP rate 0.8%). Added **79M** building height estimates for North America structures. 
 * 2022-11-16 - Added **40M** new and updated buildings across 46 geographies derived from Bing imagery including Maxar, IGN-France, and AirBus between 2015 and 2022. The largest updates are for Pakistan (16M), Turkey (13M), Afghanistan (3M), and Saudi Arabia (2.5M). Added [make-gis-friendly.py](scripts/make-gis-friendly.py) demonstrating how to convert files
 into a GIS tool (e.g., QGIS, ArcGIS) friendly format. 
 * 2022-10-12 - Added **147M** new buildings for North America based on Vexcel and Maxar imagery between 2017 and 2022. This data is a refresh of [US](https://github.com/microsoft/USBuildingFootprints). Updated data format from country-partitioned zip
@@ -53,6 +54,10 @@ The building extraction is done in two stages:
 
 #### Stage 2: Polygonization
 ![polygonization diagram](images/polygonization.jpg)
+
+### How do we estimate building height?
+We trained a neural network to estimate height above ground using imagery paired with height measurements, and then we take the 
+average height within a building polygon. Structures without height estimates are populated with a -1. 
 
 ### Were there any modeling improvements used for this release? 
 We did not apply any modeling improvements for this release. Instead, we focused on scaling our approach to increase coverage, and trained models regionally.  
