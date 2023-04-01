@@ -1,5 +1,5 @@
 
-$CountryToProcess = "Abyei"
+$CountryToProcess = "Turkey"
 
 $DatasetLinksUrl = "https://minedbuildings.blob.core.windows.net/global-buildings/dataset-links.csv"
 $CompressedData = "compressed"
