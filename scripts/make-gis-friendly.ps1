@@ -1,7 +1,9 @@
 
-$CountryToProcess = "Abyei"
+$CountryToProcess = "Turkey
+"
 
-$DatasetLinksUrl = "https://minedbuildings.blob.core.windows.net/global-buildings/dataset-links.csv"
+$DatasetLinksUrl = "https://minedbuildings.blob.core.windows.net/global-buildings/2023-03-13/global-buildings.geojsonl/RegionName%3DTurkey/quadkey%3D120323223/part-00092-459b9c51-35d7-4ec5-87f4-f9fc46a069a8.c000.csv.gz
+"
 $CompressedData = "compressed"
 $ExpandedData = "expanded"
 
