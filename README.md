@@ -3,7 +3,7 @@
 Bing Maps is releasing open building footprints around the world. We have detected **1.03B** buildings from Bing Maps imagery between 2014 and 2023 including Maxar, Airbus, and IGN France imagery. The data is freely available for download and use under ODbL. This dataset complements our [other releases](#will-there-be-more-data-coming-for-other-geographies). 
 
 ## Updates
-* 20213-04-28 - Improved near duplicate and overlapping data detection and removal. 
+* 2023-04-28 - Improved near duplicate and overlapping data detection and removal. 
 * 2023-03-13 - Added **41MM** new buildings in Japan derived from Maxar Imagery (FP rate 0.8%). Added **79M** building height estimates for North America structures. 
 * 2022-11-16 - Added **40M** new and updated buildings across 46 geographies derived from Bing imagery including Maxar, IGN-France, and AirBus between 2015 and 2022. The largest updates are for Pakistan (16M), Turkey (13M), Afghanistan (3M), and Saudi Arabia (2.5M). Added [make-gis-friendly.py](scripts/make-gis-friendly.py) demonstrating how to convert files
 into a GIS tool (e.g., QGIS, ArcGIS) friendly format. 
