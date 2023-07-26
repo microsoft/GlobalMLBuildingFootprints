@@ -67,7 +67,7 @@ The building extraction is done in two stages:
 
 ### How do we estimate building height?
 We trained a neural network to estimate height above ground using imagery paired with height measurements, and then we take the 
-average height within a building polygon. Structures without height estimates are populated with a -1. 
+average height within a building polygon. Structures without height estimates are populated with a -1. Height estimates are in meters. 
 
 ### Were there any modeling improvements used for this release? 
 We did not apply any modeling improvements for this release. Instead, we focused on scaling our approach to increase coverage, and trained models regionally.  
