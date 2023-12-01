@@ -3,6 +3,7 @@
 Bing Maps is releasing open building footprints around the world. We have detected **1.28B** buildings from Bing Maps imagery between 2014 and 2023 including Maxar, Airbus, and IGN France imagery. The data is freely available for download and use under ODbL. This dataset includes our [other releases](#will-there-be-more-data-coming-for-other-geographies). 
 
 ## Updates
+* 2023-12-01 - added **69M** building footprint edits and **2M** height estimates derived from Maxar and Vexcel imagery between 2015 and 2023. Biggest contributions are Egypt (11M), Algeria (8M), and France (7M). We've added confidence scores to new footprints. See [Building confidence scores](#building-confidence-scores).  
 * 2023-10-20 - Added **95M** building footprint edits and **9M** height estimates derived from Maxar and Vexcel imagery between 2017 and 2023. Updated structures in 52 
 countries with the largest contributors in Mexico (17M), Ethiopia (16M) and Kenya (15M).
 * 2023-10-02 - Added **77M** buildings footprint edits derived from Maxar and Vexcel imagery between 2018 and 2023. Updated structures in 35 countries with the top 3 contributions in India (24M), Bangladesh (19M), and Pakistan (14M). 
@@ -73,6 +74,12 @@ The building extraction is done in two stages:
 ### How do we estimate building height?
 We trained a neural network to estimate height above ground using imagery paired with height measurements, and then we take the 
 average height within a building polygon. Structures without height estimates are populated with a -1. Height estimates are in meters. 
+
+### Building confidence scores
+Confidence scores are between 0 and 1 and can be read as percent confidence. For structures released before this update, we use -1 as a placeholder value. 
+A confidence value of 0.8 is read as "80% confidence." Higher values mean higher detection confidence. There are two stages in the building detection process -- first we use a model to classify pixels as either building or not and next we convert groups of pixels into polygons. Each pixel has a probability of being a building and a 
+probability >0.5 is classified as "building pixel". When we generate the polygons, we then look at the pixels within and average the probability values to give and 
+overall confidence score. The confidence scores are for the footprint and not height estimate. 
 
 ### Were there any modeling improvements used for this release? 
 We did not apply any modeling improvements for this release. Instead, we focused on scaling our approach to increase coverage, and trained models regionally.  
