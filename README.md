@@ -79,7 +79,7 @@ average height within a building polygon. Structures without height estimates ar
 Confidence scores are between 0 and 1 and can be read as percent confidence. For structures released before this update, we use -1 as a placeholder value. 
 A confidence value of 0.8 is read as "80% confidence." Higher values mean higher detection confidence. There are two stages in the building detection process -- first we use a model to classify pixels as either building or not and next we convert groups of pixels into polygons. Each pixel has a probability of being a building and a 
 probability >0.5 is classified as "building pixel". When we generate the polygons, we then look at the pixels within and average the probability values to give and 
-overall confidence score. 
+overall confidence score. The confidence scores are for the footprint and not height estimate. 
 
 ### Were there any modeling improvements used for this release? 
 We did not apply any modeling improvements for this release. Instead, we focused on scaling our approach to increase coverage, and trained models regionally.  
