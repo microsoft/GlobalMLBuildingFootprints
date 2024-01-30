@@ -1,0 +1,36 @@
+import requests
+import json
+
+# Define the URL of the repository
+repo_url = "https://github.com/microsoft/GlobalMLBuildingFootprints"
+
+# Get the repository metadata
+response = requests.get(repo_url)
+data = json.loads(response.text)
+
+# Find the Lusaka dataset
+for dataset in data["datasets"]:
+    if dataset["name"] == "Lusaka":
+        dataset_url = dataset["url"]
+        break
+
+# Fork the dataset
+response = requests.post(f"https://api.github.com/repos/{dataset['owner']}/{dataset['name']}/fork")
+
+# Get the forked repository metadata
+forked_repo_data = json.loads(response.text)
+forked_repo_url = forked_repo_data["html_url"]
+
+# Clone the forked repository
+git clone forked_repo_url
+
+# Navigate to the dataset folder
+cd lusaka
+
+# Download the dataset
+git checkout data
+
+# Add the dataset to the forked repository
+git add .
+git commit -m "Add Lusaka building footprints dataset"
+git push
