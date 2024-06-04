@@ -1,8 +1,9 @@
 ## Introduction
 
-Bing Maps is releasing open building footprints around the world. We have detected **1.3B** buildings from Bing Maps imagery between 2014 and 2023 including Maxar, Airbus, and IGN France imagery. The data is freely available for download and use under ODbL. This dataset includes our [other releases](#will-there-be-more-data-coming-for-other-geographies). 
+Bing Maps is releasing open building footprints around the world. We have detected **1.3B** buildings from Bing Maps imagery between 2014 and 2024 including Maxar, Airbus, and IGN France imagery. The data is freely available for download and use under ODbL. This dataset includes our [other releases](#will-there-be-more-data-coming-for-other-geographies). 
 
 ## Updates
+* 2024-06-03 - Added **637K** building footprint edits and **627K** height estimated derived from Maxar and Vexcel imagery between 2020 and 2024. Primary contribution is in the United States (631K). dataset-links.csv was updated on 3 June 2024.
 * 2024-05-01 - Added **596K** building footprint edits and **125K** height estimated derived from Maxar and Vexcel imagery between 2017 and 2023. Primary contributions are in France (525K) and Germany (44K). dataset-links.csv was updated on 1 May 2024.
 * 2024-03-26 - Added **128M** building footprint edits and **3.5M** height estimated derived from Maxar and Vexcel imagery between 2019 and 2023. Primary contributions are in India (110M) and Nepal (7M). dataset-links.csv was updated on 1 April 2024.
 * 2024-03-01 - added **58M** new building footprint edits and **10M** height estimates derived from Maxar and Vexcel imagery between 2019 and 2023. The largest contributions are to Brazil (43M), United States (4.7M), and Germany (3.5M).  
