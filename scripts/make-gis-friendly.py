@@ -12,7 +12,7 @@ def main():
     # this is the name of the geography you want to retrieve. update to meet your needs
     location = 'Greece'
 
-    dataset_links = pd.read_csv("https://minedbuildings.blob.core.windows.net/global-buildings/dataset-links.csv")
+    dataset_links = pd.read_csv("https://minedbuildings.z5.web.core.windows.net/global-buildings/dataset-links.csv")
     greece_links = dataset_links[dataset_links.Location == location]
     for _, row in greece_links.iterrows():
         df = pd.read_json(row.Url, lines=True)
